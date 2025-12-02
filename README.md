@@ -20,7 +20,6 @@ You can also select folders manually.
 1. Choose your `gamelist.cache` file  
 2. Choose your covers output folder  
 3. Click **Download**  
-4. The app validates paths, checks internet, extracts serials, then downloads covers.
 
 
 
