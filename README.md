@@ -3,7 +3,7 @@
 <img width="491" height="569" alt="image" src="https://github.com/user-attachments/assets/ea8408c8-1e5b-47c4-98eb-905f0984f498" />
 
 
-A small Windows tool that reads `gamelist.cache`, extracts PS2 serials, and downloads missing cover images for PCSX2.
+Simple utility for downloading PS2 cover art for PCSX2.
 
 ---
 
