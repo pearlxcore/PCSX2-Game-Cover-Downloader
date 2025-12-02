@@ -41,6 +41,7 @@
             cbOverwrite = new CheckBox();
             lbLog = new ListBox();
             lblVersion = new Label();
+            cBoxCoverType = new ComboBox();
             SuspendLayout();
             // 
             // btnBrowseCache
@@ -50,7 +51,7 @@
             btnBrowseCache.Name = "btnBrowseCache";
             btnBrowseCache.Size = new Size(75, 36);
             btnBrowseCache.TabIndex = 0;
-            btnBrowseCache.Text = "browse";
+            btnBrowseCache.Text = "Browse";
             btnBrowseCache.UseVisualStyleBackColor = true;
             btnBrowseCache.Click += btnGameListLocation_Click;
             // 
@@ -77,7 +78,7 @@
             // btnDownload
             // 
             btnDownload.Font = new Font("Segoe UI Variable Small", 12F);
-            btnDownload.Location = new Point(47, 194);
+            btnDownload.Location = new Point(47, 200);
             btnDownload.Name = "btnDownload";
             btnDownload.Size = new Size(394, 32);
             btnDownload.TabIndex = 4;
@@ -112,13 +113,13 @@
             btnBrowseCover.Name = "btnBrowseCover";
             btnBrowseCover.Size = new Size(75, 36);
             btnBrowseCover.TabIndex = 7;
-            btnBrowseCover.Text = "browse";
+            btnBrowseCover.Text = "Browse";
             btnBrowseCover.UseVisualStyleBackColor = true;
             btnBrowseCover.Click += btnGameCoverDir_Click;
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(47, 260);
+            progressBar1.Location = new Point(47, 263);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(394, 10);
             progressBar1.TabIndex = 8;
@@ -127,7 +128,7 @@
             // 
             lblStatus.AutoSize = true;
             lblStatus.Font = new Font("Segoe UI Variable Small", 12F);
-            lblStatus.Location = new Point(47, 236);
+            lblStatus.Location = new Point(47, 239);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(55, 21);
             lblStatus.TabIndex = 10;
@@ -137,7 +138,7 @@
             // 
             cbOverwrite.AutoSize = true;
             cbOverwrite.Font = new Font("Segoe UI Variable Small", 12F);
-            cbOverwrite.Location = new Point(47, 163);
+            cbOverwrite.Location = new Point(47, 166);
             cbOverwrite.Name = "cbOverwrite";
             cbOverwrite.Size = new Size(191, 25);
             cbOverwrite.TabIndex = 11;
@@ -147,7 +148,7 @@
             // lbLog
             // 
             lbLog.FormattingEnabled = true;
-            lbLog.Location = new Point(47, 276);
+            lbLog.Location = new Point(47, 279);
             lbLog.Name = "lbLog";
             lbLog.Size = new Size(394, 199);
             lbLog.TabIndex = 12;
@@ -156,11 +157,23 @@
             // 
             lblVersion.AutoSize = true;
             lblVersion.Font = new Font("Segoe UI Variable Small", 12F);
-            lblVersion.Location = new Point(47, 482);
+            lblVersion.Location = new Point(47, 485);
             lblVersion.Name = "lblVersion";
             lblVersion.Size = new Size(50, 21);
             lblVersion.TabIndex = 13;
             lblVersion.Text = "v1.0.0";
+            // 
+            // cBoxCoverType
+            // 
+            cBoxCoverType.AccessibleRole = AccessibleRole.SplitButton;
+            cBoxCoverType.DropDownStyle = ComboBoxStyle.DropDownList;
+            cBoxCoverType.Font = new Font("Segoe UI Variable Small", 12F);
+            cBoxCoverType.FormattingEnabled = true;
+            cBoxCoverType.Items.AddRange(new object[] { "2D Cover", "3D Cover" });
+            cBoxCoverType.Location = new Point(281, 164);
+            cBoxCoverType.Name = "cBoxCoverType";
+            cBoxCoverType.Size = new Size(160, 29);
+            cBoxCoverType.TabIndex = 14;
             // 
             // Form1
             // 
@@ -168,6 +181,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(489, 537);
+            Controls.Add(cBoxCoverType);
             Controls.Add(lblVersion);
             Controls.Add(lbLog);
             Controls.Add(cbOverwrite);
@@ -204,5 +218,6 @@
         private CheckBox cbOverwrite;
         private ListBox lbLog;
         private Label lblVersion;
+        private ComboBox cBoxCoverType;
     }
 }

@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PCSX2_Game_Cover_Downloader
 {
@@ -24,13 +25,12 @@ namespace PCSX2_Game_Cover_Downloader
         {
             InitializeComponent();
             lblVersion.Text = "v" + GetAppVersion();
-
+            cBoxCoverType.SelectedIndex = 0;
             WireUpEvents();
 
             // initial UI state
             progressBar1.Minimum = 0;
             progressBar1.Value = 0;
-            lblStatus.Text = "...";
         }
 
         private string GetAppVersion()
@@ -39,6 +39,9 @@ namespace PCSX2_Game_Cover_Downloader
                 .GetEntryAssembly()?
                 .GetCustomAttribute<System.Reflection.AssemblyInformationalVersionAttribute>()?
                 .InformationalVersion;
+
+            if (info != null && info.Contains('+'))
+                info = info.Split('+')[0]; // remove hash
 
             return info ?? "1.0.0";
         }
@@ -304,7 +307,9 @@ namespace PCSX2_Game_Cover_Downloader
             var tasks = new List<Task>();
             int completed = 0;
 
-            string urlTemplate = "https://raw.githubusercontent.com/xlenore/ps2-covers/main/covers/default/{0}.jpg";
+            string cover2DTemplate = "https://raw.githubusercontent.com/xlenore/ps2-covers/main/covers/default/{0}.jpg";
+            string cover3DTemplate = "https://raw.githubusercontent.com/xlenore/ps2-covers/main/covers/3d/{0}.png";
+            string urlTemplate = (cBoxCoverType.Text == "2D Cover") ? cover2DTemplate : cover3DTemplate;
 
             foreach (var serial in serials)
             {
