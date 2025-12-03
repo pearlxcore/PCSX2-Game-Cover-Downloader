@@ -25,7 +25,7 @@ If you have default directory of **cache** and **cover** in _Documents_, you can
 
 
 ## Requirements
-- Windows 10 or newer  
+
 - .NET 8 Runtime  
 
 
