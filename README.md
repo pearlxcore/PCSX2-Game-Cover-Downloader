@@ -6,7 +6,8 @@
 
 Simple utility for downloading PS2 cover art for PCSX2.
 
-
+## Cover Source
+This tool downloads cover images from the **ps2-covers** repository by **xlenore**.
 
 ## Default Directories
 - **Cache:** `Documents/PCSX2/cache/gamelist.cache`  
