@@ -2,9 +2,10 @@
 
 <img width="491" height="569" alt="image" src="https://github.com/user-attachments/assets/60f492bc-a0f7-4b09-a2dd-254a77dfdd47" />
 
-
-
 Simple utility for downloading PS2 cover art for PCSX2.
+
+[![Github All Releases](https://img.shields.io/github/downloads/pearlxcore/PCSX2-Game-Cover-Downloader/total.svg)]()
+
 
 ## Cover Source
 This tool downloads cover images from the **ps2-covers** repository by **xlenore**.
