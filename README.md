@@ -11,8 +11,8 @@ This tool downloads cover images from the **ps2-covers** repository by **xlenore
 
 ## How to Use
 
-- **Cache:** `Documents/PCSX2/cache/gamelist.cache`  
-- **Covers:** `Documents/PCSX2/covers/`
+- **Default cache location:** `Documents/PCSX2/cache/gamelist.cache`  
+- **Default covers directory:** `Documents/PCSX2/covers/`
 
 If you have default directory of **cache** and **cover** in _Documents_, you can just click Download straightway. Else you can select the directories manually.
 
