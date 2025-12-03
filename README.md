@@ -29,9 +29,7 @@ If you have default directory of **cache** and **cover** in _Documents_, you can
 - .NET 8 Runtime  
 
 
-## License
-MIT License  
-
-
 ## Credit
-xlenore
+- xlenore
+- pcsx2.net
+
