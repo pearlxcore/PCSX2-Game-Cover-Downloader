@@ -1,6 +1,6 @@
 # PCSX2 Game Cover Downloader
 
-<img width="491" height="569" alt="image" src="https://github.com/user-attachments/assets/c50695ff-018f-4473-82fc-0423eb3876aa" />
+<img width="491" height="569" alt="image" src="https://github.com/user-attachments/assets/60f492bc-a0f7-4b09-a2dd-254a77dfdd47" />
 
 
 
