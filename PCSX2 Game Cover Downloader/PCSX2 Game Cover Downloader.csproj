@@ -1,21 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<RootNamespace>PCSX2_Game_Cover_Downloader</RootNamespace>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net10.0-windows</TargetFramework>
-    <RootNamespace>PCSX2_Game_Cover_Downloader</RootNamespace>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-	<Version>1.0.0</Version>
-	<AssemblyVersion>1.0.0.0</AssemblyVersion>
-	<FileVersion>1.0.0.0</FileVersion>
-	<InformationalVersion>1.0.0</InformationalVersion>
-	<ApplicationIcon>f42eea8c-e8e6-49eb-bfd7-a01bf72a2e01.ico</ApplicationIcon>
-  </PropertyGroup>
+		<!-- Only this needs to change each release -->
+		<Version>1.1.0</Version>
 
-  <ItemGroup>
-    <Content Include="f42eea8c-e8e6-49eb-bfd7-a01bf72a2e01.ico" />
-  </ItemGroup>
+		<ApplicationIcon>f42eea8c-e8e6-49eb-bfd7-a01bf72a2e01.ico</ApplicationIcon>
+	</PropertyGroup>
 
+	<ItemGroup>
+		<Content Include="f42eea8c-e8e6-49eb-bfd7-a01bf72a2e01.ico" />
+	</ItemGroup>
 </Project>
